@@ -1,13 +1,8 @@
 #include <stdio.h>
 
-int main(void)
+int main()
 {
-    int h;
+    printf("hello world\n");
 
-    do
-    {
-        printf("height: ");
-        scanf("%d", &h);
-    } while ({h < 1 || h > 8});
-    
+    return 0;
 }
