@@ -9,6 +9,7 @@ int main()
 
     int a = n % 5;
 
+    // using ternary operator for the first time here lol
     (a != 0) ? printf("number is not divisible by 5") : printf("number is divisible by 5");
 
     return 0;
