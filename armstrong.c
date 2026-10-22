@@ -5,16 +5,28 @@ int main(void)
     int num;
     int original;
     int sum = 0;
+    int count = 0;
 
-    printf("enter a 3 digit number: ");
+    printf("enter a number: ");
     scanf("%i", &num);
 
     original = num;
 
-    for (int i = 0; i < 3; i++)
+    do
+    {
+        count++;
+        num = num / 10;
+    }
+    while (num > 0);
+
+    for (int i = 0; i < count; i++)
     {
         int digit = num % 10;
-        sum = sum + digit * digit * digit;
+        int digitsss = 0;
+        
+        digitsss += digit * digit;
+
+        sum = sum + digitsss;
         num = num / 10;
     }
 
