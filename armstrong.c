@@ -2,40 +2,33 @@
 
 int main(void)
 {
-    int num;
-    int original;
-    int sum = 0;
-    int count = 0;
+    int n, temp, digit, sum = 0, count = 0;
 
-    printf("enter a number: ");
-    scanf("%i", &num);
+    printf("enter a num: ");
+    scanf("%d", &n);
+    temp = n;
 
-    original = num;
-
-    do
+    while (temp)
     {
         count++;
-        num = num / 10;
-    }
-    while (num > 0);
-
-    for (int i = 0; i < count; i++)
-    {
-        int digit = num % 10;
-        int digitsss = 0;
-        
-        digitsss += digit * digit;
-
-        sum = sum + digitsss;
-        num = num / 10;
+        temp /= 10;
     }
 
-    if (sum == original)
+    temp = n;
+
+    while (temp)
     {
-        printf("armstrong\n");
+        digit = temp % 10;
+        int power = 1;
+
+        for (int i = 0; i < count; i++)
+            power *= digit;
+
+        sum += power;
+        temp /= 10;
     }
-    else
-    {
-        printf("nope\n");
-    }
+
+    printf(sum == n ? "Armstrong" : "Not Armstrong");
+
+    return 0;
 }
