@@ -11,7 +11,11 @@ int main(void)
 {
     int x, y;
     printf("enter 2 numbers: ");
-    scanf("%d %d", &x, &y);
+    if (scanf("%d %d", &x, &y) != 2)
+    {
+        printf("invalid input\n");
+        return 1;
+    }
 
     swap(&x, &y);
     printf("after swapping: %d, %d", x, y);
