@@ -6,12 +6,12 @@ int main()
 {
     int f;
 
-    printf("Enter a number: ");
+    printf("enter a number: ");
     scanf("%i", &f);
 
     f = fibo(f);
 
-    printf("Fibonacci number: %i", f);
+    printf("fibonacci number: %i", f);
 }
 
 int fibo(int n)
