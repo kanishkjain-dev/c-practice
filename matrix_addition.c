@@ -4,19 +4,19 @@ int main()
 {
     int a[2][2], b[2][2], sum[2][2];
 
-    printf("Enter first matrix:\n");
+    printf("enter 1st matrix:\n");
 
     for(int i=0; i<2; i++)
         for(int j=0; j<2; j++)
             scanf("%d", &a[i][j]);
 
-    printf("Enter second matrix:\n");
+    printf("enter 2nd matrix:\n");
     
     for(int i=0; i<2; i++)
         for(int j=0; j<2; j++)
             scanf("%d", &b[i][j]);
 
-    printf("Sum of matrices:\n");
+    printf("sum of matrices:\n");
 
     for(int i=0; i<2; i++) 
     {
