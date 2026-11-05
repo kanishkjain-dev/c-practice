@@ -20,7 +20,7 @@ int main()
             }
         }
 
-        if (prime == 1)
+        if (prime1)
         {
             printf("%i ", i);
         }
