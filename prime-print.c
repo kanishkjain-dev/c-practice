@@ -9,20 +9,22 @@ int main()
 
     for (int i = 2; i <= n; i++)
     {
-        int is_prime = 1;
+        int prime = 1;
 
-        for (int j = 2; j < i; j++)
+        for (int j = 2; j * j <= i; j++)
         {
             if (i % j == 0)
             {
-                is_prime = 0;
+                prime = 0;
                 break;
             }
         }
 
-        if (is_prime == 1)
+        if (prime == 1)
         {
             printf("%i ", i);
         }
     }
+
+    return 0;
 }
