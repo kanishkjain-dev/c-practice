@@ -15,7 +15,7 @@ int main(void)
         scanf("%i", &arr[i]);
     }
 
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < n; i++)
     {
         sum += arr[i];
     }
